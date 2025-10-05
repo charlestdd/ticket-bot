@@ -1,3 +1,11 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # loads .env file
+
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
+
+bot.run(TOKEN)
 import discord
 from discord.ext import commands
 from discord import app_commands
